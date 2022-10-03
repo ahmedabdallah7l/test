@@ -1,0 +1,623 @@
+:root
+{
+ --praimary-color:#1c1c1c;
+ --txt-color:#748182;
+ --bg-color:#343434;
+ --white-color:white;
+ --tabs-color:#222;
+ --hover-icons-color:#1c1c1c;
+}
+@font-face {
+ font-family:'Montserrat-Bold';
+ src:url(../Fonts/Montserrat/static/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+ font-family:'Poppins-Bold';
+ src:url(../Fonts/poppins/Poppins-Light.ttf);
+}
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+/*  -----C S S - H O M E - S E C T I O N  */
+ body
+ {
+  font-family:'Poppins-Bold';
+ }
+ .Home
+ {
+  background-image: url(../img/bg.jpg);
+  height: 100vh;
+  
+  background-size:cover;
+  background-attachment: fixed;
+ }
+  .overlay-mask
+  {
+    background-color: rgba(0,0,0,0.65);
+  }
+  .custom-logo
+  {
+   font-family:'Montserrat-Bold';
+   font-weight: 700;
+  } 
+  .custom-pages 
+  {
+   font-family: 'Poppins-Bold';
+   
+    
+  }
+  nav .line{
+    position: relative;
+  }
+   nav .line::after
+   { 
+    content: "";
+    width: 48px;
+    height: 2px;
+    position: absolute;
+    background-color: var(--white-color);
+    left: 8px;
+    bottom: 0px;
+    opacity: 1;
+   }
+   header .content
+  {
+   color: var(--white-color);
+   margin-bottom:3.2rem;
+  }
+  .big-text
+  {
+   font-size: 3.3rem;
+   font-weight: 800;
+  }
+  .md-text
+  {
+   font-size: 4rem;
+   font-weight: 200;
+  }
+  header h2::after
+  {
+   content: " |";
+   animation-name:typing;
+   animation-duration:12s;
+   animation-iteration-count: infinite;
+   font-weight: 400;
+  }
+  @keyframes typing {
+   0% {content: " |";}
+   3% {content: " D|";}
+   4% {content: " De|";}
+   5% {content: " Dev|";}
+   6% {content: " Deve|";}
+   7% {content: " Develo|";}
+   8% {content: " Develop|";}
+   9% {content: " Developer|";}
+   21% {content: " Develope|";}
+   22% {content: " Develop|";}
+   23% {content: " Develo|";}
+   24% {content: " Develo|";}
+   25% {content: " Devel|";}
+   26% {content: " Deve|";}
+   27% {content: " Dev|";}
+   28% {content: " De|";}
+   29% {content: " D|";}
+   30% {content: " |";}
+   31% {content: " D|";}
+   32% {content: " De|";}
+   33% {content: " Des|";}
+   34% {content: " Desi|";}
+   35% {content: " Desig|";}
+   36% {content: " Design|";}
+   37% {content: " Designe|";}
+   38% {content: " Designer|";}
+   56% {content: " Designe|";}
+   59% {content: " Design|";}
+   60% {content: " Desig|";}
+   61% {content: " Desi|";}
+   62% {content: " Des|";}
+   63% {content: " De|";}
+   64% {content: " D|";}
+   65% {content: " L|";}
+   66% {content: " La|";}
+   67% {content: " Lar|";}
+   68% {content: " Larr|";}
+   69% {content: " Larry|";}
+   70% {content: " Larry D|";}
+   71% {content: " Larry Da|";}
+   72% {content: " Larry Dan|";}
+   73% {content: " Larry Danli|";}
+   74% {content: " Larry Danlie|";}
+   75% {content: " Larry Danliel|";}
+   76% {content: " Larry Danliels|";}
+   86% {content: " Larry Danliel|";}
+   87% {content: " Larry Danlie|";}
+   88% {content: " Larry Danli|";}
+   89% {content: " Larry Danl|";}
+   90% {content: " Larry Dan|";}
+   91% {content: " Larry Da|";}
+   92% {content: " Larry D|";}
+   93% {content: " Larry|";}
+   94% {content: " Larr|";}
+   95% {content: " Lar|";}
+   96% {content: " La|";}
+   97% {content: " L|";}
+   98% {content: " |";}
+   
+  }
+
+  .icon
+  {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 1rem;
+  }
+  
+/*  -----E N D - H O M E - S E C T I O N  */
+
+/*  -----C S s - A B O U T - S E C T I O N  */
+#About
+{
+padding:8rem 0rem;
+}
+.image-container
+{
+ position:relative;
+}
+.image-container img {
+ width: 100%;
+}
+.image-container::after
+{
+ content: '';
+ width: 80%;
+ height: 80%;
+ position: absolute;
+ left: -20px;
+ bottom: -35px;
+ background-image: url(../img/dots.png);
+ background-repeat: repeat;
+ z-index: -1;
+}
+#About .container
+{
+ width: 80%;
+}
+#About h2
+{
+ font-family: 'Montserrat-Bold';
+ font-weight: 900;
+ margin-bottom: 0.5rem;
+}
+#About span
+{
+ color: #999;
+ margin-bottom: 1.2rem;
+ display: inline-block;
+}
+#About p
+{
+ color: var(--txt-color);
+ font-weight: 100;
+ font-size: 1.1rem;
+}
+b
+{
+ font-weight: 800;
+}
+.custome-bar
+{
+ height: 1.5rem;
+ background: #f7f7f7;
+ box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) inset;
+  position: relative;
+ 
+}
+#About .progress-state .one
+{
+ font-family: 'Montserrat-Bold';
+ text-align: left;
+ padding-left: 0.5rem;
+ font-size: 0.9rem;
+ bottom:-5px;
+ position: relative;
+ columns: var(--white-color);
+}
+#About .progress-state .one::after
+{
+ content: " 95%";
+ position: absolute;
+ right: 5px;
+}
+#About .progress-state .two
+{
+ font-family: 'Montserrat-Bold';
+ text-align: left;
+ padding-left: 0.5rem;
+ font-size: 0.9rem;
+ bottom:-5px;
+ position: relative;
+ columns: var(--white-color);
+}
+#About .progress-state .two::after
+{
+ content: " 80%";
+ position: absolute;
+ right: 5px;
+}
+#About .progress-state .three
+{
+ font-family: 'Montserrat-Bold';
+ text-align: left;
+ padding-left: 0.5rem;
+ font-size: 0.9rem;
+ bottom:-5px;
+ position: relative;
+ columns: var(--white-color);
+}
+#About .progress-state .three::after
+{
+ content: " 90%";
+ position: absolute;
+ right: 5px;
+}
+
+.btn
+
+{
+ font-size: 0.9rem;
+ padding: 0.6rem 1.4rem;
+ margin-bottom: 0.5rem;
+ 
+}
+.btn-one
+{
+ color:white;
+ background-color: var(--praimary-color)
+}
+.btn-two
+{
+ color:var(--praimary-color);
+ background-color: var(--white-color);
+ border: solid 2px var(--praimary-color)
+}
+  /*  -----E N D - A B O U T - S E C T I O N  */
+   
+  /* ---------- A B O U T  H O V E R ---------- */
+  .btn-one:hover
+{
+ color:var(--praimary-color);
+ background-color: var(--white-color);
+ border: solid 1px var(--praimary-color);
+ 
+}
+.btn-two:hover
+{
+ color:white;
+ background-color: var(--praimary-color);
+
+}
+  /* --------- E N D - A B O U T - H O V E R ---------- */
+
+
+
+
+
+/*  -----C S S - S E R V I S E C - S E C T I O N  */
+.box-container
+{
+ background-color: #f7f7f7;
+}
+ .section-head 
+ {
+  margin-bottom: 80px;
+  text-align: center;
+
+ 
+ }
+ .section-head h2
+ {
+  font-family:'Montserrat-Bold' ;
+ font-weight: 900;
+ color: var(--praimary-color);
+  display: inline;
+  position: relative;
+  z-index: 9999;
+ }
+  .section-head h2::after
+ {
+  content: '';
+  width: 100%;
+  height: 30px;
+  background-image: url(../img/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+
+#Services .ico-circle
+{
+ font-size: 1.5rem;
+ width: 70px;
+ height: 70px;
+ background-color:#f4f4f4;
+ color: var(--praimary-color);
+ transition: all 0.5s ease;
+}
+#Services .box h3
+{
+ font-family:'Montserrat-Bold' ;
+ font-weight: 900;
+}
+/* -----E N D - S E R V I C E S - S E C T I O N  */
+
+ /* ------- S E R V I C E S - H O V E R ------- */
+
+#Services .box:hover .ico-circle{
+ background-color: var(--hover-icons-color);
+ color: white;
+}
+   /* ------ E N D - S E R V I C E S - H O V E R ------- */
+ 
+
+/* -----C S S - W O R K- S E C T I O N  */
+ 
+.nav-pills .nav-link.active
+{
+ background-color:var(--white-color);
+ color:var(--tabs-color) ;
+ font-family:'Montserrat-Bold' ;
+ font-weight: 900;
+ position: relative;
+}
+.nav-pills .nav-link.active::after
+{
+ content: "";
+ position: absolute;
+ width:calc(100% - 32px) ;
+ height: 3px;
+ background-color: var(--tabs-color);
+ bottom: 4px;
+ left:13px;
+}
+.nav-pills .nav-link
+{
+ background-color:var(--white-color);
+ color:var(--tabs-color) ;
+ font-family:'Montserrat-Bold' ;
+ font-weight: 900;
+}
+
+.work .overlayer
+{
+ top:5px;
+ right:5px;
+ bottom:5px;
+ left:5px;
+ background-color: rgba(255,255,255,0.95);
+ transform: translateY(10px);
+opacity: 0;
+z-index: 2;
+transition: all 0.5s ease;
+}
+.work .overlayer .content
+{
+ position: absolute;
+ width: 100%;
+ top: 50%;
+ left: 0;
+ 
+}
+.work .overlayer .content h6
+{
+ font-size: 1rem;
+ font-family:'Montserrat-Bold' ;
+ font-weight: 700;
+ letter-spacing: 2px;
+ position: relative;
+ margin-bottom: 15px;
+ transform: translateY(-15px); 
+ text-align: center;
+ transition: all 1s ease;
+}
+.work .overlayer .content .icons
+{
+ font-size: 0.8rem;
+transform: translateY(50%);
+ position: absolute;
+ transform: translateY(40px); 
+ margin-bottom: 15px;
+ color: var(--praimary-color);
+ transition: all 1s ease;
+}
+.work .ico-circle-2
+{
+ width: 35px;
+ height: 35px;
+ margin-left: 0.2rem;
+ background-color:var(--hover-icons-color);
+ border: solid 1px var(--praimary-color);
+ color: white;
+ transition: all 0.5s ease;
+}
+
+/* -----E N D - W O R K- S E C T I O N */
+
+/* ------- W O R K - H O V E R ------- */
+.work .img-container:hover .overlayer
+{ 
+ transform: translateY(0);
+ opacity: 1;
+}
+.work .img-container:hover .h6
+{ 
+ transform: translateY(0px);
+ 
+}
+.work .img-container:hover .icons
+{
+ transform: translateY(25px);
+}
+.work .overlayer .content .icons .ico-circle-2:hover
+{
+  color: var(--hover-icons-color);
+  background-color: var(--white-color);
+  border: solid 2px var(--hover-icons-color);
+  border-radius: 50%;
+}
+ 
+/* ------ E N D - W O R K - H O V E R ------- */
+
+/* ---- C S S -T E S T I M O N I A L S- S E C T I O N */
+.Clients .image-container
+{
+ width:90px;
+ height: 90px;
+ 
+ margin: auto;
+ 
+}
+
+#Clients .carouse
+{
+ color: var(--txt-color);
+}
+#Clients .carouse p
+{
+ width: 80%;
+}
+#Clients .carouse h6
+{
+ color: var(--praimary-color);
+ font-family:'Montserrat-Bold';
+}
+#Clients .carouse span
+{
+ font-size: 0.9rem;
+ color: var(--txt-color);
+ font-family:'Montserrat-Bold';
+}
+.carousel-indicators [data-bs-target]
+{
+ width: 0.8rem;
+ height:0.8rem;
+ border-radius: 50%;
+ background-color: var(--txt-color);
+}
+/* ---- E N D -T E S T I M O N I A L S- S E C T I O N  */
+
+/* -----C S S -S T A T E- S E C T I O N  */
+ .states i
+ {
+  font-size: 2rem;
+  font-weight: 800;
+ } 
+ .states p
+ {
+  font-family:'Montserrat-Bold';
+  font-size: 2rem;
+  font-weight: 900;
+ }
+ .states span
+ {
+  font-weight: 600;
+  color: var(--txt-color);
+ }
+/*  -----E N D -S T A T E- S E C T I O N  */
+
+/* -----C S S -B L O G- S E C T I O N  */
+.ankr-1
+{
+  font-family:'Montserrat-Bold' ;
+  color: var(--txt-color);
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+.ankr-2
+{
+ font-family:'Montserrat-Bold' ;
+  color: var(--praimary-color);
+  font-weight: 800;
+}
+.ankr-3
+{
+ color: var(--praimary-color);
+  font-weight: 900;
+  border-bottom: solid 2px var(--praimary-color);
+}
+
+#Blog .img-container img
+{
+ transition: all 1s ease;
+}
+
+/* - -----E N D -B L O G- S E C T I O N  */
+
+ /* ------ S T A R T - B L O G - H O V E R ------- */
+#Blog .img-container:hover img
+{
+ transform: scale(1.2);
+}
+#Blog a:hover
+{
+ color: var(--praimary-color);
+}
+/* ------ E N D - B L O G - H O V E R ------- */
+
+
+/*  -----C S S -C O N T A C T- S E C T I O N  */
+
+#Contacts .ico-circle
+{
+ font-size: 1.5rem;
+ width: 70px;
+ height: 70px;
+ background-color:#f4f4f4;
+ color: var(--praimary-color);
+ transition: all 0.5s ease;
+}
+#Contacts h6
+{
+ color: var(--praimary-color);
+ font-family:'Montserrat-Bold';
+ font-size: 1.3rem;
+}
+#Contacts p
+{
+ color: var(--txt-color);
+}
+#Contacts .ico-circle:hover{
+ background-color: var(--hover-icons-color);
+ color: white;
+}
+form .custom
+{
+ background-color: #f4f4f4;
+ color: var(--txt-color);
+ border: 0px;
+}
+form .btn
+{
+ padding: 0.7rem 2.2rem;
+ background-color: var(--praimary-color);
+ color: var(--white-color);
+ font-size: 0.9rem;
+}
+/*  -----E N D -C O N T A C T- S E C T I O N  */
+
+/*  -----C S S -F O O T E R- S E C T I O N  */
+footer
+{
+ background-color: var(--praimary-color);
+}
+ footer p
+ {
+   font-size: 0.95rem;
+  color: var(--txt-color);
+ }
+/* <!-- -----E N D -F O O T E R- S E C T I O N --> */
